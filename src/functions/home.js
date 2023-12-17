@@ -2,7 +2,7 @@
 const home = function(){
     
     const element = document.createElement('div');
-    element.textContent = 'Lemon Sounds Delicious';
+    element.textContent = 'Restaurant Tastes Delicious';
     
     return element;
 }

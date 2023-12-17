@@ -2,8 +2,9 @@ import './styles/normalize.css';
 import './styles/style.css';
 import home from './functions/home.js'
 
-const content = document.getElementById('content')
+const content = document.querySelector('#content')
+const newChildElement = home();
 
-let element = home();
+content.appendChild(newChildElement);
 
-content.appendChild(element)
+console.log(content)
