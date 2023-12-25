@@ -1,4 +1,52 @@
-*{
+@font-face {
+    font-family: 'Zeyada';
+    src: url('./Zeyada-Regular.ttf') format('TrueType');
+    font-weight: 800;
+    font-style: normal;
+  }
+
+/* stablish font for the web*/
+
+body{
     background-color: black;
     color: white;
+    font-family: 'Zeyada';
 }
+
+/* Set styles for header and its children*/ 
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid red;
+}
+
+.divChanges{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  border-top: 1px solid aqua;
+}
+
+.divChanges div {
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid aqua;  
+}
+
+.divChanges div:nth-child(3){
+  border-right: 0px;
+}
+
+h3{
+  font-size: x-large;
+}
+
+h3:hover{
+  color:aqua;
+}
+

@@ -1,10 +1,11 @@
 import './styles/normalize.css';
 import './styles/style.css';
-import home from './functions/home.js'
+import header from './functions/header.js'
 
-const content = document.querySelector('#content')
-const newChildElement = home();
+const body = document.querySelector('body')
+const contentHeader = header();
+const contentDiv = document.querySelector('#content')
 
-content.appendChild(newChildElement);
+body.insertBefore(contentHeader, contentDiv );
 
 console.log(content)
