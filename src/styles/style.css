@@ -68,7 +68,8 @@ header h3:hover{
 #content{
   display: flex;
   flex: 1;
-  
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* home styles*/
@@ -134,12 +135,14 @@ form label{
 form div{
   display: flex;
   align-items: baseline;
+  justify-content: center;
   flex:1;
   padding: 1em;
 }
 
 form div input{
   flex:1;
+  max-width: 20vw;
 }
 
 form .divComment{
@@ -157,6 +160,7 @@ form button:hover{
 
 .menu{
   color: white;
+  max-width:100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -165,6 +169,7 @@ form button:hover{
 }
 
 .gridMenu{
+  max-width:90%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 8px;
@@ -178,6 +183,7 @@ form button:hover{
 
 .gridMenu img{
   max-height: 80%;
+  max-width: 25vw;
   object-fit: contain;
 }
 
