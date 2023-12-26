@@ -2,9 +2,6 @@ import Whatsapp from './../images/whatsapp.svg';
 
 const contact = function(){
 
-    /* function to create the header with the restaurant's title and 
-    3 links to change website's content 
-    */
     const contact = document.createElement('div');
     contact.classList.add('contact');
     
@@ -63,6 +60,9 @@ const contact = function(){
     const submitButton = document.createElement('button');
     formContact.appendChild(submitButton);
     submitButton.textContent = "Submit";
+
+    submitButton.addEventListener('click', (event)=>
+    event.preventDefault())
 
     return contact;
 }
